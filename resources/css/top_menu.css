@@ -1,0 +1,54 @@
+/*
+Copyright (c) Oga Technologies Private Limited. All Rights Reserved.
+Unauthorized copying of this file, via any medium is strictly prohibited
+Proprietary and confidential.
+Written by Oga Technologies, October 1,  2016.
+*/
+.navbar-fixed-top{
+    z-index: 8000;
+}
+
+#toppageheader
+{
+    color: #fff;
+    margin-left: 18%;
+    margin-top:14px;
+    position: absolute;
+    font-size:16px;
+    font-weight: bold;
+    width: 600px;
+
+}
+
+.navbar-toggle .icon-bar {
+    background-color: white !important;
+}
+nav.navbar-custom li a:hover {
+    background-color: #ff2919;
+}
+nav.navbar-custom li a:hover{
+    color: #fff;
+}
+nav.navbar-custom li a:focus {
+    background-color: #ff2919;
+}
+nav.navbar-custom li.open a:active,nav.navbar-custom li.open a:focus{
+    color:  #fff;
+    background-color: #ff2919;
+}
+nav.navbar-custom li.open a:active,nav.navbar-custom li.open ul aa:hover{
+    color:  #fff;
+    background-color: #ff2919;
+}
+nav.navbar-custom li ul a{
+    color:  black;  
+}
+nav.navbar-custom li a{
+    color:white;
+}
+
+.navbar-collapse.in {
+    overflow: hidden;
+    max-height: none !important;
+    height: auto !important;
+}

@@ -1,0 +1,159 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10 Jul, 2017, 1:14:04 PM
+    Author     : oga-6
+*/
+
+.scrollToTop{
+	
+	padding:5px; 
+	text-align:center; 
+	background: whiteSmoke;
+	font-weight: bold;
+	color: #444;
+	text-decoration: none;
+	position:fixed;
+	bottom:20px;
+	right:15px;
+	display:none;
+	background:no-repeat;
+        border: 1px solid  #003656;
+       
+}
+
+.scrollToTop:hover{
+	text-decoration:none;
+        background-color: #003656;
+       color: white;
+}
+
+.form-group{
+    width: 100%;
+    
+}
+
+
+span.multiselect-native-select {
+    position: relative
+}
+span.multiselect-native-select select {
+    border: 0!important;
+    clip: rect(0 0 0 0)!important;
+    height: 1px!important;
+    margin: -1px -1px -1px -3px!important;
+    overflow: hidden!important;
+    padding: 0!important;
+    position: absolute!important;
+    width: 1px!important;
+    left: 50%;
+    top: 30px
+}
+.multiselect-container {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+.multiselect-container .input-group {
+    margin: 5px
+}
+.multiselect-container>li {
+    padding: 0
+}
+.multiselect-container>li>a.multiselect-all label {
+    font-weight: 700
+}
+.multiselect-container>li.multiselect-group label {
+    margin: 0;
+    padding: 3px 20px 3px 20px;
+    height: 100%;
+    font-weight: 700
+}
+.multiselect-container>li.multiselect-group-clickable label {
+    cursor: pointer
+}
+.multiselect-container>li>a {
+    padding: 0
+}
+.multiselect-container>li>a>label {
+    margin: 0;
+    height: 100%;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 3px 0 3px 30px
+}
+.multiselect-container>li>a>label.radio, .multiselect-container>li>a>label.checkbox {
+    margin: 0
+}
+.multiselect-container>li>a>label>input[type=checkbox] {
+    margin-bottom: 5px
+}
+.btn-group>.btn-group:nth-child(2)>.multiselect.btn {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px
+}
+.form-inline .multiselect-container label.checkbox, .form-inline .multiselect-container label.radio {
+    padding: 3px 20px 3px 40px
+}
+.form-inline .multiselect-container li a label.checkbox input[type=checkbox], .form-inline .multiselect-container li a label.radio input[type=radio] {
+    margin-left: -20px;
+    margin-right: 0
+}
+
+/*******************************
+
+*******************************/
+.panel-group .panel {
+    border-radius: 0;
+    box-shadow: none;
+    border-color: #EEEEEE;
+}
+
+.panel-default > .panel-heading {
+
+
+    color: #212121;
+
+
+}
+
+.panel-title {
+    font-size: 14px;
+}
+
+.panel-title > a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.more-less {
+    float: left;
+    color: #212121;
+}
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: #EEEEEE;
+}
+
+/* ----- v CAN BE DELETED v ----- */
+body {
+
+}
+
+.demo {
+    padding-top: 60px;
+    padding-bottom: 60px;
+} 
+
+
+
+
+
+
+
+

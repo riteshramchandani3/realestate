@@ -1,0 +1,476 @@
+/*
+Copyright (c) Oga Technologies Private Limited. All Rights Reserved.
+Unauthorized copying of this file, via any medium is strictly prohibited
+Proprietary and confidential.
+Written by Oga Technologies, October 1,  2016.
+*/
+.open>.dropdown-menu {
+    display: block !important;
+}
+
+body,html{
+    height: 100%;
+    font-family: Titillium;
+}
+.navbar-inverse {
+    background-color: #1C518E;
+    border-color: #003656;
+    position: fixed;
+
+}
+/* remove outer padding */
+/*.main .row{
+    padding: 0px;
+    margin: 0px;
+}*/
+
+/*Remove rounded coners*/
+
+nav.sidebar.navbar {
+    border-radius: 0px;
+    overflow-x: scroll;
+    margin-top: 0px;
+}
+
+.navbar.navbar-inverse.sidebar{
+    margin-top:55px;
+}
+
+nav.sidebar, .main{
+    -webkit-transition: margin 400ms ease-out;
+    -moz-transition: margin 400ms ease-out;
+    -o-transition: margin 400ms ease-out;
+    transition: margin 400ms ease-out;
+}
+
+/* Add gap to nav and right windows.*/
+.main{
+    padding: 10px 10px 0 10px;
+}
+
+/* .....NavBar: Icon only with coloring/layout.....*/
+
+/*small/medium side display*/
+@media (min-width: 768px) {
+
+    /*Allow main to be next to Nav*/
+    .main{
+        position: absolute;
+        width: calc(100% - 40px); /*keeps 100% minus nav size*/
+        margin-left: 40px;
+        float: right;
+    }
+
+    /*lets nav bar to be showed on mouseover*/
+    nav.sidebar:hover + .main{
+        margin-left: 200px;
+    }
+
+    /*Center Brand*/
+    nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+        margin-left: 0px;
+    }
+    /*Center Brand*/
+    nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
+        text-align: center;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    /*Center Icons*/
+    nav.sidebar a{
+        padding-right: 13px;
+
+    }
+
+    /*adds border top to first nav box */
+    nav.sidebar .navbar-nav > li:first-child{
+        border-top: 1px #e5e5e5 solid;
+    }
+
+    /*adds border to bottom nav boxes*/
+    nav.sidebar .navbar-nav > li{
+        border-bottom: 1px #e5e5e5 solid;
+    }
+
+    /* Colors/style dropdown box*/
+    nav.sidebar .navbar-nav .open .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: white;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    /*allows nav box to use 100% width*/
+    nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
+        padding: 0 0px 0 0px;
+    }
+
+    /*colors dropdown box text */
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+        color: #1a1a1a;
+    }
+
+    /*gives sidebar width/height*/
+
+    /*give sidebar 100% width;*/
+    nav.sidebar li {
+        width: 100%;
+    }
+
+    /* Move nav to full on mouse over*/
+    nav.sidebar:hover{
+        margin-left: 0px;
+    }
+    /*for hiden things when navbar hidden*/
+    .forAnimate{
+        opacity: 0;
+    }
+
+
+}
+
+/* .....NavBar: Fully showing nav bar..... */
+
+@media (min-width: 1330px) {
+
+    /*Allow main to be next to Nav*/
+
+    .main{
+        /* width: calc(100% - 200px);*/ /*keeps 100% minus nav size*/
+        /*  margin-left: 200px;*/
+    }
+
+    /*Show all nav*/
+    nav.sidebar{
+        /*margin-left: 0px;*/
+        /* float: left;*/
+    }
+    /*Show hidden items on nav*/
+    nav.sidebar .forAnimate{
+        opacity: 1;
+    }
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: white!important;
+}
+/*gives sidebar width/height*/
+nav.sidebar{
+    width: 222px;
+    height: 100%;
+    margin-left: -160px;
+    float: left;
+    z-index: 8000;
+    margin-bottom: 0px;
+}
+
+nav.sidebar .navbar-nav .open .dropdown-menu>li>a:hover, nav.sidebar .navbar-nav .open .dropdown-menu>li>a:focus {
+    color: #CCC;
+    background-color: transparent;
+}
+
+nav:hover .forAnimate{
+    opacity: 1;
+}
+section{
+    padding-left: 15px;
+}
+
+/* new pest */
+
+nav.sidebar li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 3px;
+    background-color: #1c1c1c;
+    -webkit-transition: width .2s ease-in;
+    -moz-transition:  width .2s ease-in;
+    -ms-transition:  width .2s ease-in;
+    transition: width .2s ease-in;
+
+}
+nav.sidebar li:nth-child(1):before {
+    background-color: #FF2919;   
+}
+nav.sidebar li:nth-child(2):before {
+    background-color: #FF2919;   
+}
+nav.sidebar li:nth-child(3):before {
+    background-color: #FF2919;   
+}
+nav.sidebar li:nth-child(4):before {
+    background-color: #FF2919;   
+}
+nav.sidebar li:nth-child(5):before {
+    background-color: #FF2919;   
+}
+nav.sidebar li:nth-child(6):before {
+    background-color: #FF2919;   
+}
+nav.sidebar li:nth-child(7):before {
+    background-color:#FF2919;   
+}
+nav.sidebar li:nth-child(8):before {
+    background-color: #FF2919;   
+}
+nav.sidebar li:nth-child(9):before {
+    background-color: #FF2919;   
+}
+nav.sidebar li:nth-child(10):before {
+    background-color:#FF2919;   
+}
+nav.sidebar li:nth-child(11):before {
+    background-color: #FF2919;   
+}
+nav.sidebar li:nth-child(12):before {
+    background-color: #FF2919;   
+}
+nav.sidebar li:nth-child(13):before {
+    background-color: #FF2919;   
+}
+
+nav.sidebar li:hover:before,
+nav.sidebar li.open:hover:before {
+    width: 100%;
+    -webkit-transition: width .2s ease-in;
+    -moz-transition:  width .2s ease-in;
+    -ms-transition:  width .2s ease-in;
+    transition: width .2s ease-in;
+
+}
+
+nav.sidebar li li a {
+    display: block;
+    color: #ddd;
+    text-decoration: none;
+    padding: 10px 15px 10px 30px;    
+}
+
+nav.sidebar li a:hover,
+nav.sidebar li a:active,
+nav.sidebar li a:focus,
+nav.sidebar li.open a:hover,
+nav.sidebar li.open a:active,
+nav.sidebar li.open a:focus{
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+nav.sidebar > .sidebar-brand {
+    height: 65px;
+    font-size: 20px;
+    line-height: 44px;
+}
+nav.sidebar .dropdown-menu {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    background-color: #222;
+    box-shadow: none;
+}
+.navbar-nav > li > a {
+    /* padding-top: 12px; */
+    /* padding-bottom: 12px; */
+}
+.navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+    color: #fff;
+    background-color: #ff2919;  
+
+}
+
+/*.dropdown .dropdown-menu {
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+}*/
+.dropdown.open .dropdown-menu {
+    max-height: 200px;
+    opacity: 1;
+}
+
+nav.sidebar .navbar-nav .open .dropdown-menu > li > a:hover, nav.sidebar .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ff2919;
+    background-color: transparent;
+
+}
+.cool-link {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+.cool-link:hover::after {
+    width: 100%; 
+}
+@media (min-width: 1200px){
+    .container {
+        width: 1118px;
+    }
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+
+    background-color: #ff2919;
+}
+
+nav.sidebar.navbar::-webkit-scrollbar {
+    width: 0.6em;
+}
+
+nav.sidebar.navbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+nav.sidebar.navbar::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+/*Allow main to be next to Nav*/
+
+@media (min-width: 266px) {
+
+    /*Allow main to be next to Nav*/
+    .main{
+        position: absolute;
+        width: calc(100% - 40px); /*keeps 100% minus nav size*/
+        float: right;
+    }
+
+    /*lets nav bar to be showed on mouseover*/
+    nav.sidebar:hover + .main{
+        margin-left: 200px;
+    }
+
+    /*Center Brand*/
+    nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+        margin-left: 0px;
+    }
+    /*Center Brand*/
+    nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
+        text-align: center;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    /*adds border top to first nav box */
+    nav.sidebar .navbar-nav > li:first-child{
+        border-top: 1px #e5e5e5 solid;
+    }
+
+    /*adds border to bottom nav boxes*/
+    nav.sidebar .navbar-nav > li{
+        border-bottom: 1px #e5e5e5 solid;
+    }
+
+    /* Colors/style dropdown box*/
+    nav.sidebar .navbar-nav .open .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: white;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    /*allows nav box to use 100% width*/
+    nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
+        /*  padding: 0 0px 0 0px; */
+    }
+
+    /*colors dropdown box text */
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+        color: #1a1a1a;
+    }
+
+
+
+    /*give sidebar 100% width;*/
+    nav.sidebar li {
+        width: 100%;
+    }
+
+    /* Move nav to full on mouse over*/
+    nav.sidebar:hover{
+        margin-left: 0px;
+    }
+    /*for hiden things when navbar hidden*/
+    .forAnimate{
+        opacity: 0;
+    }
+
+    .navbar-nav>li>a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+}
+
+/* .....NavBar: Fully showing nav bar..... */
+
+
+.dropdown-menu>li>a:hover{
+    background-color: #FF2919 !important;
+    color: #FFF !important;
+}
+
+
+.navbar-inverse .navbar-nav > li > a>.icon:after {
+    font-family: 'FontAwesome';
+    content: "\f054";  
+
+} 
+.navbar-inverse .navbar-nav > .open > a>.icon:after {    
+    content: "\f078";      
+} 
+.navbar-inverse .navbar-nav .open .dropdown-menu{
+    background-color: #3c81d1 !important; 
+}
+.nav .open>a{
+    background-color: #3c81d1 !important;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a{
+    color: #fff !important;
+
+}
+.dropdown-menu>.active>a{
+    background-color: #FF2919 !important;
+}
+.navbar-inverse .navbar-nav>.open>a{
+    color: #fff;
+    background-color: #1C518E !important;
+}
+nav.sidebar .navbar-nav> .dropdown> .dropdown-menu {
+   overflow: hidden !important;
+}
+.fa.pull-right {
+    margin-left: -1.7em !important;
+}
