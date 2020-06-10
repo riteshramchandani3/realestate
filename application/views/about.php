@@ -14,7 +14,7 @@ Written by Oga Technologies, October 1,  2016.
         ?>
         <style>
             .about-text{
-                font-size: 16px;
+                font-size: 17px;
                 text-align: justify;
             }
             #about-company{
