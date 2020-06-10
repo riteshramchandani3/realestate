@@ -7,7 +7,7 @@ Written by Oga Technologies, October 1,  2016.
 -->
 <html>
     <head>
-        <title>Agreement Letter</title>
+        <title>Agreement </title>
         <?php
         include_once('assets/html_head_links.php');
         require('assets/convert_number_to_words.php');
@@ -50,7 +50,7 @@ Written by Oga Technologies, October 1,  2016.
                 font-size: 14px !important;
             }
             h4{
-                font-size: 14px !important;
+                font-size: 15px !important;
             }
             p{
                 text-align: justify !important;
